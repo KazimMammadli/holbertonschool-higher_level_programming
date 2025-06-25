@@ -6,6 +6,7 @@ class Rectangle:
     """Define a rectangle with given two parameters."""
 
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """Initialize two parameters and increase\
             the number of instances by 1."""
@@ -61,6 +62,6 @@ class Rectangle:
 
     def __del__(self):
         """Delete the instance and decrease\
-            the number of instances by 1"""
+            the number of instances by 1."""
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
