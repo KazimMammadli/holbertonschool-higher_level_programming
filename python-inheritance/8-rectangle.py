@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """This module defines a class"""
 
 
@@ -17,7 +18,10 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
+    """Rectangle class."""
+
     def __init__(self, width, height):
+        """Constructor for recntagle class."""
         super().integer_validator("width", width)
         super().integer_validator("height", height)
         self.__width = width
