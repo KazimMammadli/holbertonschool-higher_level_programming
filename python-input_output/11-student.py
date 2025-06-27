@@ -20,7 +20,6 @@ class Student:
 
     def reload_from_json(self, json):
         """Return dict of replaced attributes"""
-        self.__dict__ = {}
         for k, v in json.items():
             self.__dict__[k] = v
         return self.__dict__
