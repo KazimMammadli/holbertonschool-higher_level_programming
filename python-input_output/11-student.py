@@ -22,4 +22,3 @@ class Student:
         """Return dict of replaced attributes"""
         for k, v in json.items():
             self.__dict__[k] = v
-        return self.__dict__
